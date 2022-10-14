@@ -4,7 +4,6 @@ const express = require('express')
 const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const weather = require('./utils/weather')
-
 const app = express()
 
 //Setup Static directory to serve
