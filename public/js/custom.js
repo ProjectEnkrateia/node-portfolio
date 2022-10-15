@@ -14,7 +14,7 @@ formweather.addEventListener('submit', (e) => {
     const location = weathervr.value
     responweatherTwo.textContent = 'Loading...'
     responweather.textContent = ''
-    fetch(`http://localhost:3000/getweather?address=${location}`).then((res) => {
+    fetch(`/getweather?address=${location}`).then((res) => {
         res.json().then((data) => {
             if (data.error) {
                 responweatherTwo.textContent = `${data.error}`
